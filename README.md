@@ -38,21 +38,17 @@ The dataset undergoes preprocessing using a `ColumnTransformer` pipeline combini
 * **TF-IDF Vectorization** on `product_title` text.
 * **MinMaxScaler** on extracted numerical features (`title_word_count`, `title_char_count`, `longest_word_length`).
 
+  
+
 Multiple classification algorithms were trained and evaluated on test data:
 
    
-| Model                                |       Accuracy | Macro F1-Score | Weighted F1-Score |
-
-
-| **Support Vector Machine (SVM)**     |    **0.97**    | **0.97**       |      **0.97**   |
-
-| **Random Forest**                    |    **0.96**    | **0.96**       |      **0.96**   |
-
-| **Logistic Regression**              |    **0.96**    | **0.96**       |      **0.96**   |
-
-| **Naive Bayes**                      |    **0.93**    | **0.88**       |      **0.92**   |
-
-
+| Model | Accuracy | Macro F1-Score | Weighted F1-Score |
+| :--- | :---: | :---: | :---: |
+| **Support Vector Machine (SVM)** | **0.97** | **0.97** | **0.97** |
+| Random Forest | 0.96 | 0.96 | 0.96 |
+| Logistic Regression | 0.96 | 0.96 | 0.96 |
+| Naive Bayes | 0.93 | 0.88 | 0.92 |
 
 ### Final Model Selection
 In training various models, the **Support Vector Machine (SVM)** achieved the best overall performance and accuracy, which is clearly visible in the confusion matrix heatmap visualization. It recorded the highest accuracy at **0.97**. Although a higher accuracy does not inherently imply a better trained model, its superior F1-score and correctly classified categories in the matrix confirm that SVM is indeed the best performing model.
