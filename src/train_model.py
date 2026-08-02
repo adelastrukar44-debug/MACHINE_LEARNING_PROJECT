@@ -7,7 +7,7 @@ from sklearn.svm import LinearSVC
 import joblib
 
 # Load cleaned dataset
-df = pd.read_csv("data/cleaned_data_set_for_ML_Train")
+df = pd.read_csv("data/cleaned_dataset_for_ML_Train.csv")
 
 # Define features and label
 x = df[['product_title','title_word_count','title_char_count','longest_word_length']]
