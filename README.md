@@ -70,7 +70,7 @@ This is an expected limitation of text-based NLP models. Because universal brand
 ### 1. Requirements
 Ensure you have the required Python packages installed:
 
-`pip install pandas scikit-learn, joblib`
+`pip install pandas scikit-learn joblib`
 
 ### 2. Train the Final Model
 To train the SVM model on the entire dataset and save the trained model pipeline:
