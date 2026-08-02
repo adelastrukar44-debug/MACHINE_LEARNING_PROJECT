@@ -48,7 +48,8 @@ Multiple classification algorithms were trained and evaluated on test data:
 | **Support Vector Machine (SVM)** | **0.97** | **0.97** | **0.97** |
 | Random Forest | 0.96 | 0.96 | 0.96 |
 | Logistic Regression | 0.96 | 0.96 | 0.96 |
-| Naive Bayes | 0.93 | 0.88 | 0.92 |
+| Naive Bayes | 0.93 | 0.92 | 0.93 |
+| Decision Tree | 0.94 | 0.94 | 0.94 |
 
 ### Final Model Selection
 In training various models, the **Support Vector Machine (SVM)** achieved the best overall performance and accuracy, which is clearly visible in the confusion matrix heatmap visualization. It recorded the highest accuracy at **0.97**. Although a higher accuracy does not inherently imply a better trained model, its superior F1-score and correctly classified categories in the matrix confirm that SVM is indeed the best performing model.
