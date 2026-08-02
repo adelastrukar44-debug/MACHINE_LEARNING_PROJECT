@@ -10,15 +10,25 @@ This project focuses on automated product category classification based on produ
 ## 📁 Project Structure
 .
 ├── data/
+
 │   ├── products.csv           # Raw unprocessed dataset
+
 │   └── cleaned_dataset_for_ML_Train.csv   # Preprocessed dataset for ML
+
 ├── notebooks/
+
 │   ├── 01_Data_Cleaning_and_Feature_Engineering.ipynb    # Data cleaning and feature engineering
+
 │   └── 02_ML_Model_Training_and_Evaluation.ipynb        # Model evaluation and comparison
+
 ├── src/
+
 │   ├── train_model.py                 # Script to train SVM model on full dataset
+
 │   └── predict_category.py         # CLI application for real-time predictions
+
 ├── .gitignore                         # Excludes virtual environments and model artifacts (*.pkl)
+
 └── README.md                          # Project documentation
 
 
@@ -29,12 +39,17 @@ The dataset undergoes preprocessing using a `ColumnTransformer` pipeline combini
 * **MinMaxScaler** on extracted numerical features (`title_word_count`, `title_char_count`, `longest_word_length`).
 
 Multiple classification algorithms were trained and evaluated on test data:
+
    
 | Model                                |       Accuracy | Macro F1-Score | Weighted F1-Score |
 
+
 | **Support Vector Machine (SVM)**     |    **0.97**    | **0.97**       |      **0.97**   |
+
 | **Random Forest**                    |    **0.96**    | **0.96**       |      **0.96**   |
+
 | **Logistic Regression**              |    **0.96**    | **0.96**       |      **0.96**   |
+
 | **Naive Bayes**                      |    **0.93**    | **0.88**       |      **0.92**   |
 
 
